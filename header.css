@@ -10,7 +10,8 @@
 
 /* Body */
 body {
-    margin: 3% 7% 5%;
+    margin: 7vmin 7vmax;
+    justify-content: center;
 }
 
 
@@ -197,6 +198,11 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+    body {
+        margin: 3vmax 7vmin  ;
+        justify-content: center;
+        overflow-x: hidden;
+    }
     .dt{
         display: block;
     }

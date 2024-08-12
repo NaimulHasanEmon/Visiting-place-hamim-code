@@ -58,6 +58,7 @@
 }
 
 @media screen and (max-width: 576px){
+    
     .our-popular-tours{
         display: inline;
     }
@@ -67,7 +68,9 @@
         padding-bottom: 40px;
     }
 
-    /* .our-popular-tours .hill{
-        width: 80vw;
-    } */
+    .our-popular-tours .hill{
+        width: 83vw;
+    }
+
+    
 }

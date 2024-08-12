@@ -1,3 +1,5 @@
+/* @import url('header.css'); */
+
 :root{
     --primary-color: #FF5400;
     --secondary-color: #131318;
@@ -8,3 +10,64 @@
     --third-fontsize: 16px;
 }
 
+/* Our Popular Tours */
+.our-popular-tours{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 44px;
+}
+
+.txt1{
+    padding-right: 7%;
+    color: var(--third-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ht1{
+    font-size: var(--first-fontsize);
+    font-family: var(--font-family);
+}
+
+.pt1{
+    font-size: var(--second-fontsize);
+    font-family: var(--font-family);
+}
+
+.bt1{
+    background-color: var(--primary-color);
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    color: white;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.txt1 .bt1:hover{
+    transform: scale(1.1);
+}
+
+.our-popular-tours .hill{
+    transition: transform 0.3s ease;
+}
+.our-popular-tours .hill:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px){
+    .our-popular-tours{
+        display: inline;
+    }
+    .txt1{
+        padding-top: 20px;
+        padding-right: 0%;
+        padding-bottom: 40px;
+    }
+
+    /* .our-popular-tours .hill{
+        width: 80vw;
+    } */
+}

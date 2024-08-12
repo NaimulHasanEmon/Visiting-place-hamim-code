@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #FF5400;
     --secondary-color: #131318;
     --third-color: #424247;
@@ -9,27 +9,30 @@
 }
 
 /* Body */
-body{
+body {
     margin: 3% 7% 5%;
 }
 
 
 /* Header */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
 }
-.HeroTravel{
+
+.HeroTravel {
     display: flex;
     width: 274px;
     height: 48px;
     gap: 17px;
 }
-.planelogo{
+
+.planelogo {
     width: 48px;
     height: 56px;
 }
-.text{
+
+.text {
     display: flex;
     align-items: center;
     width: 201px;
@@ -38,37 +41,102 @@ nav{
     font-family: var(--font-family);
     font-size: var(--first-fontsize);
 }
-.hero{
+
+.hero {
     color: var(--secondary-color);
 }
-.travel{
+
+.travel {
     color: var(--primary-color);
 }
-a{
+
+a {
     text-decoration: none;
     font-family: var(--font-family);
     font-size: 18px;
 }
-.nav-link{
+
+/* Container for the icon */
+.menu-icon {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+/* Each line of the icon */
+.menu-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    /* Change color as needed */
+    border-radius: 2px;
+    /* Optional: adds rounded corners to the lines */
+    transition: all 0.3s ease;
+    /* Optional: smooth transition for animations */
+}
+
+.nav-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 506px;
     height: 43px;
 }
-.home{
+
+.nav-link>ul {
+    display: flex;
+}
+
+.nav-link li {
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.nav-link li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link li :hover {
     color: var(--primary-color);
 }
-.bl{
+
+/* nested menu styles */
+.nav-link li .dropdown {
+    display: none;
+}
+
+.nav-link li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background-color: antiquewhite;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: var(--third-color);
+    font-family: var(--font-family);
+}
+
+
+
+#home {
+    color: var(--primary-color);
+}
+
+.bl {
     color: var(--third-color);
 }
 
-.header-bgm{
+.header-bgm {
     width: 100%;
     height: 546px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.581), rgba(0, 0, 0, 0.077)), url('Resources/Images/Group 13 (1) (1).png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 3% 0%;
     border-radius: 15px;
     display: flex;
@@ -77,24 +145,29 @@ a{
     align-items: center;
     color: aliceblue;
     font-family: var(--font-family);
-    font-size: 40px;
+    /* font-size: 40px; */
 }
 
-.la{
+.exp{
+    font-size: 50px;
+}
+
+.la {
     font-size: var(--third-fontsize);
 }
 
-.button-L{
+.button-L {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
-    padding: 7px;
+    padding: 7px 12px;
     width: 60%;
     height: 50px;
     background-color: rgba(228, 232, 235, 0.448);
 }
-.btn{
+
+.button-L .btn {
     width: 20%;
     height: 40px;
     border-radius: 5px;
@@ -102,11 +175,72 @@ a{
     color: var(--third-color);
     padding-left: 7px;
     padding-right: 7px;
+    transition: transform 0.3s ease;
 }
-.cl{
+
+.button-L .btn:hover {
+    transform: scale(1.1);
+}
+
+.cl {
     background-color: var(--primary-color);
     color: azure;
 }
-.cv{
+
+.cv {
     color: var(--third-color);
+}
+
+.dt{
+    display: none;
+    justify-content: end;
+}
+
+@media screen and (max-width: 576px) {
+    .dt{
+        display: block;
+    }
+    .mt{
+        display: none;
+    }
+    .nav-link{
+        justify-content: end;
+    }
+
+    .exp{
+        font-size: 30px;
+        align-items: start;
+    }
+
+    .la {
+        font-size: 14px;
+        width: 65vw;
+        text-align: center;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        width: 120px;
+        height: 27px;
+        gap: 3px;
+        font-family: var(--font-family);
+        font-size: var(--first-fontsize);
+    }
+
+    .button-L{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 60vw;
+        height: 45vh;
+        padding: 20px 0px;
+    }
+
+    .button-L .btn{
+        width: 75%;
+        height: 60px;
+        font-size: 16px;
+    }
 }

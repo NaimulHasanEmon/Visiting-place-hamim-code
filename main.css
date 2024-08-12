@@ -10,6 +10,12 @@
     --third-fontsize: 16px;
 }
 
+/* Body */
+body {
+    margin: 7vmin 7vmax;
+    justify-content: center;
+}
+
 /* Our Popular Tours */
 .our-popular-tours{
     display: flex;
@@ -50,17 +56,19 @@
     transform: scale(1.1);
 }
 
-.our-popular-tours .hill{
+.hill{
     transition: transform 0.3s ease;
 }
-.our-popular-tours .hill:hover{
+
+.hill:hover{
     transform: scale(1.1);
 }
 
 @media screen and (max-width: 576px){
     
     .our-popular-tours{
-        display: inline;
+        display: block;
+        
     }
     .txt1{
         padding-top: 20px;
@@ -68,8 +76,10 @@
         padding-bottom: 40px;
     }
 
-    .our-popular-tours .hill{
-        width: 83vw;
+    .hill{
+        /* width: 30vmin; */
+        overflow-x: hidden;
+        border-radius: 17px;
     }
 
     

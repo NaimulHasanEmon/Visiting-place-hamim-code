@@ -8,12 +8,6 @@
     --third-fontsize: 16px;
 }
 
-/* Body */
-body {
-    margin: 7vmin 7vmax;
-    justify-content: center;
-}
-
 
 /* Header */
 nav {
@@ -185,11 +179,12 @@ a {
 
 .cl {
     background-color: var(--primary-color);
-    color: azure;
+    /* color: azure; */
+    font-weight: bold;
 }
 
 .cv {
-    color: var(--third-color);
+    color: rgba(255, 255, 255, 0.899);
 }
 
 .dt{
@@ -198,11 +193,6 @@ a {
 }
 
 @media screen and (max-width: 576px) {
-    body {
-        margin: 3vmax 7vmin  ;
-        justify-content: center;
-        overflow-x: hidden;
-    }
     .dt{
         display: block;
     }

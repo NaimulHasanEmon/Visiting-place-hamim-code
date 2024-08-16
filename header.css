@@ -202,11 +202,20 @@ a {
         font-size: 21px;
     }
 
-    .text {   
-        width: 120px;
-        height: 27px;
-        font-size: 21px;  
+    /* .text {   
+        font-size: 21px;
+        align-items: center;;  
       
+    } */
+
+    .hero{
+        font-size: 30px;
+        align-items: center;
+    }
+
+    .travel{
+        font-size: 30px;
+        align-items: center;
     }
 
     .header-bgm {
@@ -226,7 +235,7 @@ a {
 
     .exp{
         font-size: 30px;
-        align-items: start;
+        align-items: center;
     }
 
     .la {

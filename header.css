@@ -178,6 +178,8 @@ a {
     justify-content: end;
 }
 
+
+
 @media screen and (max-width: 576px) {
     header nav {
         display: flex;
@@ -209,10 +211,8 @@ a {
     }
 
     .HeroTravel {
-        /* display: flex; */
         width: 163px;
         height: 28px;
-        /* gap: 17px; */
         font-size: 21px;
     }
 

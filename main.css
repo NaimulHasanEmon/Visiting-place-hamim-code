@@ -60,7 +60,6 @@ body {
 .hill {
     display: flex;
     transition: transform 0.3s ease;
-    /* width: 45%; */
     height: 550px;
 }
 
@@ -122,7 +121,7 @@ body {
 
 }
 
-@media screen and (min-width: 576px) and (max-width: 992px){
+/* @media screen and (min-width: 576px) and (max-width: 992px){
     .our-popular-tours {
         display: block;
         padding-bottom: 44px;
@@ -149,7 +148,7 @@ body {
         width: 100%;
         margin: 7vmin 7vmax;
     }
-}
+} */
 
 @media screen and (max-width: 576px) {
 

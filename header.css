@@ -279,14 +279,14 @@ a {
         align-items: center;
         flex-direction: column;
         width: 60vw;
-        height: 45vh;
+        height: 40vh;
         padding: 20px 0px;
         margin-bottom: 20px;
     }
 
     .button-L .btn {
         width: 75%;
-        height: 60px;
+        height: 50px;
         font-size: 16px;
     }
 }

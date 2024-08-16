@@ -108,7 +108,7 @@ a {
 
 .nav-link li:hover .dropdown {
     display: block;
-    position: absolute;
+    position:absolute;
     background-color: antiquewhite;
     padding-left: 10px;
     border-radius: 5px;
@@ -193,6 +193,27 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+
+    .HeroTravel {
+        /* display: flex; */
+        width: 163px;
+        height: 28px;
+        /* gap: 17px; */
+        font-size: 21px;
+    }
+
+    .text {   
+        width: 120px;
+        height: 27px;
+        font-size: 21px;  
+      
+    }
+
+    .header-bgm {
+        width: auto;
+        height: auto;
+    }
+
     .dt{
         display: block;
     }
@@ -232,6 +253,7 @@ a {
         width: 60vw;
         height: 45vh;
         padding: 20px 0px;
+        margin-bottom: 20px;
     }
 
     .button-L .btn{

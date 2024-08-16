@@ -8,12 +8,17 @@
     --third-fontsize: 16px;
 }
 
+/* Body */
+body {
+    margin: 7vmin 7vmax;
+    justify-content: center;
+}
 
 /* Header */
 nav {
     display: flex;
     justify-content: space-between;
-    gap: 20%;
+    gap: auto;
 }
 
 .HeroTravel {
@@ -52,28 +57,7 @@ a {
     font-size: 18px;
 }
 
-/* Container for the icon */
-.menu-icon {
-    width: 35px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-}
 
-
-/* Each line of the icon */
-.menu-icon div {
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-    /* Change color as needed */
-    border-radius: 2px;
-    /* Optional: adds rounded corners to the lines */
-    transition: all 0.3s ease;
-    /* Optional: smooth transition for animations */
-}
 
 .nav-link {
     display: flex;
@@ -194,6 +178,28 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+    /* Container for the icon */
+.menu-icon {
+    width: 25px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+/* Each line of the icon */
+.menu-icon div {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    /* Change color as needed */
+    border-radius: 2px;
+    /* Optional: adds rounded corners to the lines */
+    transition: all 0.3s ease;
+    /* Optional: smooth transition for animations */
+}
 
     .HeroTravel {
         /* display: flex; */

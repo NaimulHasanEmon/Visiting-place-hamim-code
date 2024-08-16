@@ -13,13 +13,14 @@
 nav {
     display: flex;
     justify-content: space-between;
+    gap: 20%;
 }
 
 .HeroTravel {
     display: flex;
     width: 274px;
     height: 48px;
-    gap: 17px;
+    gap: 5%;
 }
 
 .planelogo {
@@ -202,11 +203,13 @@ a {
         font-size: 21px;
     }
 
-    /* .text {   
+    .text {   
+        width: 120px;
+        height: 27px;
         font-size: 21px;
         align-items: center;;  
       
-    } */
+    }
 
     .hero{
         font-size: 30px;

@@ -51,7 +51,7 @@ header nav {
     color: var(--primary-color);
 }
 
-a {
+header a {
     text-decoration: none;
     font-family: var(--font-family);
     font-size: 18px;
@@ -125,7 +125,6 @@ a {
     align-items: center;
     color: aliceblue;
     font-family: var(--font-family);
-    /* font-size: 40px; */
 }
 
 .exp {
@@ -135,6 +134,7 @@ a {
 
 .la {
     font-size: var(--third-fontsize);
+    text-align: center;
 }
 
 .button-L {
@@ -165,7 +165,6 @@ a {
 
 .cl {
     background-color: var(--primary-color);
-    /* color: azure; */
     font-weight: bold;
 }
 
@@ -221,7 +220,7 @@ a {
         height: 27px;
         font-size: 21px;
         align-items: center;
-        ;
+       
 
     }
 

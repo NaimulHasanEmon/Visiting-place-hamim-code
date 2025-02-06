@@ -24,7 +24,7 @@ main{
 .our-popular-tours {
     display: flex;
     justify-content: space-between;
-    padding-top: 44px;
+    padding-top: 42px;
 }
 
 .txt1 {
